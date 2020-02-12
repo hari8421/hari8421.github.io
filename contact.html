@@ -156,7 +156,7 @@
               <div class="col-lg-6">
                 <div class="form-box">
                   <h3>Want to place an order ?  </h3>
-                  <form id="contact-form" class="form" method="post" action="http://theme.dsngrid.com/droow-l/contact.php" data-toggle="validator">
+                  <form id="contact-form" class="form" method="post" action="send_form_email.php" data-toggle="validator">
                     <div class="messages"></div>
                     <div class="input__wrap controls">
                       <div class="form-group">
@@ -177,6 +177,14 @@
                         </div>
                         <div class="help-block with-errors"></div>
                       </div>
+                      <div class="form-group">
+                        <div class="entry">
+                          <label>What's your phone number?</label>
+                          <input id="form_email" type="number" name="telephone" placeholder="Type your phone number"
+                            required="required" data-error="Valid phone number is required.">
+                        </div>
+                        <div class="help-block with-errors"></div>
+                      </div>
 
                       <div class="form-group">
                         <div class="entry">
@@ -189,7 +197,7 @@
                       </div>
 
                       <div class="image-zoom" data-dsn="parallax">
-                        <button>Send Message</button>
+                        <button  type="submit" value="Submit">Send Message</button>
                       </div>
 					  
 					  
