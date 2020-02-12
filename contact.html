@@ -26,7 +26,9 @@
   <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+<body class="v-light hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true" style="background: url(./assets/img/main_img1.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;">
   <div data-dsn-temp="light"></div>
 
   <div class="preloader">
@@ -83,7 +85,7 @@
           </div>
 
           <div class="text-menu">
-            <div class="text-button">Menu</div>
+            <div style="color:white;" class="text-button">Menu</div>
             <div class="text-open">Open</div>
             <div class="text-close">Close</div>
           </div>
@@ -122,8 +124,8 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="contenet-hero">
-                <h5>Let's Talk</h5>
-                <h1>Contact</h1>
+              <h5 style="color:white;">Let's Talk</h5>
+                <h1 style="color:white;">Contact</h1> </font>
               </div>
             </div>
           </div>
@@ -154,7 +156,7 @@
               </div>
 
               <div class="col-lg-6">
-                <div class="form-box">
+                <div class="box-info-contact form-box">
                   <h3>Want to place an order ?  </h3>
                   <form id="contact-form" class="form" method="post" action="send_form_email.php" data-toggle="validator">
                     <div class="messages"></div>
@@ -187,13 +189,29 @@
                       </div>
 
                       <div class="form-group">
-                        <div class="entry">
-                          <label>Order details</label>
+                        <div class="entry" >
+                          <label>Service</label>
+
+                          <select name="service" >
+                            <option  >Security Camera </option>
+                            <option  >Automatic Doors </option>
+                            <option  >Security Camera </option>
+                            <option  >Automatic Doors </option>
+                            <option  >Security Camera </option>
+                            <option  >Automatic Doors  Automatic Door Automatic Door </option>
+                          </select>
+
+                          </div>
+                      </div>
+
+                          <div class="form-group">
+                              <div class="entry">
+                                <label>Order details</label>
                           <textarea id="form_message" class="form-control" name="message"
                             placeholder="Tell us about you and the world" required="required"
                             data-error="Please,leave us a message."></textarea>
                         </div>
-                        <div class="help-block with-errors"></div>
+                       
                       </div>
 
                       <div class="image-zoom" data-dsn="parallax">
@@ -214,7 +232,8 @@
 		  
 		   <div class="col-lg-12">
 			   <div class="container-fluid">
-            <div class="map-custom" id="map" data-dsn-lat="30.0489206" data-dsn-len="31.258553" data-dsn-zoom="14">
+            <div >
+              <img  width="50%" src = "./assets/img/im/n1.png"><img width="50%"  src = "./assets/img/im/n2.png">
             </div>
           </div>
 			  </div>
@@ -257,9 +276,8 @@
   <!-- Optional JavaScript -->
   <script src="assets/js/jquery-3.1.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/dsn-grid.js"></script>
-  <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA49hGCmzG22gXOfg784H0w8DtKEsSvq7k"></script>
+ <script src="assets/js/dsn-grid.js"></script> 
+ 
   <script src="assets/js/custom.js"></script>
 
 </body>
